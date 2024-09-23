@@ -96,9 +96,8 @@
             </p>
           </div>
         </div>
-        <div class="row-span-3 rounded-lg bg-white border-2 border-black animate-fadeInUp1 w-80">
+        <div class="row-span-3 rounded-lg bg-white border-2 border-black animate-fadeInUp1 sm:w-80 mt-2">
           <v-carousel
-            height="400"
             show-arrows="hover"
             cycle
             hide-delimiter-background
@@ -136,11 +135,11 @@ const navigation = [
 
  
   const item= [
-   {src:"/src/assets/images/img1.jpg"},
-   {src:"/src/assets/images/img2.jpg"},
-   {src:"/src/assets/images/img3.jpg"},
-   {src:"/src/assets/images/img4.jpg"},
-   {src:"/src/assets/images/img5.jpg"},
+   {src:"/img1.jpg"},
+   {src:"/img2.jpg"},
+   {src:"/img3.jpg"},
+   {src:"/img4.jpg"},
+   {src:"/img5.jpg"},
   ]
   
 
