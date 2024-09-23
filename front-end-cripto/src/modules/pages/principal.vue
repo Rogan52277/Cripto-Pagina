@@ -57,27 +57,46 @@
 
   <div class="flex md:justify-center">
     <div class="w-full md:w-4/5 grid grid-cols-1 divide-y-[3px]">
-      <div class="sm:grid grid-rows-3 grid-flow-col gap-4 mt-3">
-        <div class="ml-2 mr-2 row-span-3 rounded-lg bg-white border-2 border-black animate-fadeInUp1 ">
-          <img class="mx-auto w-auto" src="@/assets/images/escom.jpg" alt="Your Company">
+      <div class="sm:grid grid-rows-3 grid-flow-col gap-4 mt-3 ">
+        
+        <div class="ml-2 mr-2 sm:w-96 row-span-4 col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp1 h-60">
+          <v-carousel
+            show-arrows="hover"
+            cycle
+            class="relative w-full h-auto"
+            hide-delimiter-background
+            
+          >
+            <v-carousel-item
+              v-for="(item1, i) in item1"
+              :key="i"
+              :src="item1.src"
+              class="object-cover h-60"
+              cover
+            >
+            </v-carousel-item>
+          </v-carousel>
         </div>
         <div class="col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2 ml-2 mr-2">
           <div>
             <p class="text-center text-2xl">
-              ¿Quien soy?
+              Formacion Académica
             </p>
           </div>
         </div>
         <div class="row-span-2 col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2 ml-2 mr-2">
           <div>
             <p>
-              Soy un chico que estudia en la ESCOM, que se encuentra apasionado por estudiar aquí, ya que me ha permitido conocer muchas personas importantes
+              Actualmente me encuentro en octavo semestre en la escuela superior de computo, sin embargo anteriormente me encontraba en la ESIME
+              zacatenco.
+              <br>
+              En mi media superior sali como tecnico en programación de la escuela CBTis "Jose Vasconcelos"
             </p>
           </div>
         </div>
       </div>
       <div class="sm:grid grid-rows-3 grid-flow-col gap-4 mt-5">
-        <div class="col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 ml-2 mr-2">
+        <div class="col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 ml-2 mr-2 h-20">
           <div>
             <p class="text-center text-2xl">
               ¿Cuales son mis pasatiempos?
@@ -129,18 +148,23 @@ onMounted(async()=>{
 
 const navigation = [
   { name: 'Descargar CV', href: '/CV - actualizado.pdf'},
+  { name :'Facebook', href:'https://www.facebook.com/RodrigoSanchezB522'}
   
 ]
 
-
+const item1= [
+  {src:"/escom.jpg", },
+  {src:"/esime.jpg"},
+  {src:"/cbtis.jpg"},
+]
  
-  const item= [
-   {src:"/img1.jpg"},
-   {src:"/img2.jpg"},
-   {src:"/img3.jpg"},
-   {src:"/img4.jpg"},
-   {src:"/img5.jpg"},
-  ]
+const item= [
+  {src:"/img1.jpg"},
+  {src:"/img2.jpg"},
+  {src:"/img3.jpg"},
+  {src:"/img4.jpg"},
+  {src:"/img5.jpg"},
+]
   
 
 
