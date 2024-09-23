@@ -8,7 +8,7 @@
     <!-- Contenedor de texto y botón -->
     <div class="flex flex-col items-center md:items-start">
       <!-- Texto de 404 -->
-      <div class="text-5xl md:text-6xl lg:text-8xl lg:mt-3 items-text-center md:items-text-left">
+      <div class="text-5xl md:text-6xl lg:text-8xl lg:mt-3 !items-text-center md:items-text-left">
         <p>404<br />Page not found</p>
       </div>
 

@@ -56,11 +56,40 @@
   </Disclosure>
 
   <div class="flex md:justify-center">
-    <div class="w-full md:w-4/5 bg-white grid grid-cols-1 divide-y-[3px]">
-      
-      
+    <div class="w-full md:w-4/5 grid grid-cols-1 divide-y-[3px]">
+      <div class="sm:grid grid-rows-3 grid-flow-col gap-4 mt-3">
+        <div class="ml-2 mr-2 row-span-3 rounded-lg bg-white border-2 border-black animate-fadeInUp1 ">
+          <img class="mx-auto w-auto" src="@/assets/images/escom.jpg" alt="Your Company">
+        </div>
+        <div class="col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2">
+          <div>
+            <p class="text-center text-2xl">
+              ¿Quien soy?
+            </p>
+          </div>
+        </div>
+        <div class="row-span-2 col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2">
+          <div>
+            <p>
+              Soy un chico que estudia en la ESCOM, que se encuentra apasionado por estudiar aquí, ya que me ha permitido conocer muchas personas importantes
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sm:grid grid-rows-3 grid-flow-col gap-4 mt-5">
+        <div class="col-span-2 rounded-lg bg-white border-4 border-2 border-black animate-fadeInUp0_7">
+
+        </div>
+        <div class="row-span-2 col-span-2 rounded-lg bg-white border-4 border-2 border-black animate-fadeInUp0_7">
+
+        </div>
+        <div class="row-span-3 rounded-lg bg-white border-4 border-2 border-black animate-fadeInUp1">
+
+        </div>
+      </div>
     </div>
   </div>  
+
 </template>
 
 <script setup>
