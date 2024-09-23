@@ -61,14 +61,14 @@
         <div class="ml-2 mr-2 row-span-3 rounded-lg bg-white border-2 border-black animate-fadeInUp1 ">
           <img class="mx-auto w-auto" src="@/assets/images/escom.jpg" alt="Your Company">
         </div>
-        <div class="col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2">
+        <div class="col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2 ml-2 mr-2">
           <div>
             <p class="text-center text-2xl">
               ¿Quien soy?
             </p>
           </div>
         </div>
-        <div class="row-span-2 col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2">
+        <div class="row-span-2 col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2 ml-2 mr-2">
           <div>
             <p>
               Soy un chico que estudia en la ESCOM, que se encuentra apasionado por estudiar aquí, ya que me ha permitido conocer muchas personas importantes
@@ -77,14 +77,40 @@
         </div>
       </div>
       <div class="sm:grid grid-rows-3 grid-flow-col gap-4 mt-5">
-        <div class="col-span-2 rounded-lg bg-white border-4 border-2 border-black animate-fadeInUp0_7">
-
+        <div class="col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 ml-2 mr-2">
+          <div>
+            <p class="text-center text-2xl">
+              ¿Cuales son mis pasatiempos?
+            </p>
+          </div>
         </div>
-        <div class="row-span-2 col-span-2 rounded-lg bg-white border-4 border-2 border-black animate-fadeInUp0_7">
-
+        <div class="row-span-2 col-span-2 rounded-lg bg-white border-2 border-black animate-fadeInUp0_7 mt-2 ml-2 mr-2">
+          <div>
+            <p >
+              Me gusta hacer mucha variedad de cosas ya que no me limito en cuestion de realizar actividades, ya que a lo largo de este tiempo
+              me he dedicado a muchas actividades como por ejemplo, en la secundaria solia jugar voleibol y salto de cuerda,
+              en la preparatoria me dique a jugar basketball y andas mucho en bicicleta, sin embargo llego pandemia donde no realice 
+              nada de actividad pero una vez estando aqui y la disponibilidad de tiempo que tengo me he dedicado de lleno a tenis de mesa.
+              <br>
+              Tambien he ido a hacer senderismo, escala y rapel.
+            </p>
+          </div>
         </div>
-        <div class="row-span-3 rounded-lg bg-white border-4 border-2 border-black animate-fadeInUp1">
-
+        <div class="row-span-3 rounded-lg bg-white border-2 border-black animate-fadeInUp1 w-80">
+          <v-carousel
+            height="400"
+            show-arrows="hover"
+            cycle
+            hide-delimiter-background
+          >
+            <v-carousel-item
+              v-for="(item, i) in item"
+              :key="i"
+              :src="item.src"
+              cover
+            >
+            </v-carousel-item>
+          </v-carousel>
         </div>
       </div>
     </div>
@@ -106,6 +132,17 @@ const navigation = [
   { name: 'Descargar CV', href: '/CV - actualizado.pdf'},
   
 ]
+
+
+ 
+  const item= [
+   {src:"/src/assets/images/img1.jpg"},
+   {src:"/src/assets/images/img2.jpg"},
+   {src:"/src/assets/images/img3.jpg"},
+   {src:"/src/assets/images/img4.jpg"},
+   {src:"/src/assets/images/img5.jpg"},
+  ]
+  
 
 
 </script>
