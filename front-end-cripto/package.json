@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "build": "npm run build"
+    "build": "vite build"
   },
   "dependencies": {
     "vue": "^3.4.29"
