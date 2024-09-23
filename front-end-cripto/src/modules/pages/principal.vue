@@ -74,7 +74,7 @@ onMounted(async()=>{
 })
 
 const navigation = [
-  { name: 'Descargar CV', href: '/src/assets/documents/CV - actualizado.pdf'},
+  { name: 'Descargar CV', href: '/CV - actualizado.pdf'},
   
 ]
 
