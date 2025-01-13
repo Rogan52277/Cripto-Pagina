@@ -151,6 +151,7 @@ const navigation = [
   { name :'Facebook', href:'https://www.facebook.com/RodrigoSanchezB522'},
   { name: 'Llave publica Alicia', href: '/llave_publica_alicia.key'},
   { name: 'Llave publica Betito', href: '/llave_publica_betito.key'},
+  { name: 'Mi llave publica', href: '/llave_public.txt'},
   
 ]
 
