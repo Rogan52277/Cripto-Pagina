@@ -1,5 +1,5 @@
 <template>
-  <Disclosure as="nav" class="bg-cyan-600" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-green-600" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:!px-6 lg:!px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -13,7 +13,7 @@
         </div>
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:!justify-start">
           <div class="flex flex-shrink-0 items-center">
-            <router-link to="/" class="text-white hover:text-gray-300 ">Mi pagina persona<br> Para la materia Cripto</router-link>
+            <router-link to="/" class="text-white hover:text-green-300 ">Mi pagina persona<br> Para la materia Cripto</router-link>
           </div>
           <div class="hidden sm:ml-14 sm:block">
             <div class="flex space-x-4">
@@ -149,7 +149,7 @@ onMounted(async()=>{
 const navigation = [
   { name: 'Descargar CV', href: '/CV - actualizado.pdf'},
   { name :'Facebook', href:'https://www.facebook.com/RodrigoSanchezB522'},
-  { name: 'Mi llave publica', href: '/clave_publica.der'},
+  { name: 'Mi llave publica', href: '/clave_publicaR.der'},
   
 ]
 
