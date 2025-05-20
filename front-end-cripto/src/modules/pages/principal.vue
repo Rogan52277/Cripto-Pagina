@@ -149,9 +149,7 @@ onMounted(async()=>{
 const navigation = [
   { name: 'Descargar CV', href: '/CV - actualizado.pdf'},
   { name :'Facebook', href:'https://www.facebook.com/RodrigoSanchezB522'},
-  { name: 'Llave publica Alicia', href: '/llave_publica_alicia.key'},
-  { name: 'Llave publica Betito', href: '/llave_publica_betito.key'},
-  { name: 'Mi llave publica', href: '/llave_public.txt'},
+  { name: 'Mi llave publica', href: '/clave_publica.der'},
   
 ]
 
